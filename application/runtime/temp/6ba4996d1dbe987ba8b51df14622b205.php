@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"D:\phpStudy\WWW\zxw/application/admin/index\view\login\index.html";i:1488965940;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"D:\phpStudy\WWW\zxw/application/admin/index\view\login\index.html";i:1489033621;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +25,7 @@
 				<tr>
 					<td>验证码：</td>
 					<td><input type="text" name="verify" id="verify"></td>
-					<td><img src="" alt=""></td>
+					<td><div><img src="<?php echo captcha_src(); ?>" alt="captcha" onclick="this.src += '?rand='+Math.random()"/></div></td>
 				</tr>
 			</table>
 		</form>
@@ -39,12 +39,40 @@
 				return false;
 			}
 
+			var index;
 			$("form").ajaxSubmit({
 	            type: 'post', // 提交方式 get/post
-	            url: '<?php echo url('login/check'); ?>', // 需要提交的 url
+	            url: '<?php echo url('Login/check'); ?>', // 需要提交的 url
 	            success: function(data) { // data 保存提交后返回的数据，一般为 json 数据
 	                // 此处可对 data 作相关处理
-	                alert('提交成功！');
+	                if(data.status == 1)
+					{
+						index = layer.alert(data.info);
+						setTimeout(function(){
+							layer.close(index);
+						},2000);
+					}
+					else
+					{
+						index = layer.alert(data.info);
+						setTimeout(function(){
+							layer.close(index);
+						},2000);
+					}
+					
+					if(data.status == 1 & data.url == '')
+					{
+						setTimeout(function(){
+							window.location.reload();
+						},2000);
+					}
+					
+					if(data.status == 1 & data.url != '')
+					{
+						setTimeout(function(){
+							window.location.href = data.url;
+						},2000);
+					}
 	            }
       		});
 			return false;
