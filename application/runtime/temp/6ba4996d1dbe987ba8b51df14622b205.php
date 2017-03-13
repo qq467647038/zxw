@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"D:\phpStudy\WWW\zxw/application/admin/index\view\login\index.html";i:1489033621;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"D:\phpStudy\WWW\zxw/application/admin/index\view\login\index.html";i:1489375336;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +33,7 @@
 	</div>
 	<script>
 		function login(){
-			if($("#name").val().trim() == '' || $("#pwd").val().trim() == '' || $("#verify").val().trim() == '')
+			if($("#name").val() == '' || $("#pwd").val() == '' || $("#verify").val() == '')
 			{
 				layer.alert("表单填写不完整！");
 				return false;

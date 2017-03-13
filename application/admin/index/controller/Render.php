@@ -2,7 +2,7 @@
 namespace app\index\controller;
 use think\View;
 
-class Index
+class Render
 {
     public function index()
     {

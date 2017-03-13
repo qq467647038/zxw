@@ -32,7 +32,7 @@
 	</div>
 	<script>
 		function login(){
-			if($("#name").val().trim() == '' || $("#pwd").val().trim() == '' || $("#verify").val().trim() == '')
+			if($("#name").val() == '' || $("#pwd").val() == '' || $("#verify").val() == '')
 			{
 				layer.alert("表单填写不完整！");
 				return false;
