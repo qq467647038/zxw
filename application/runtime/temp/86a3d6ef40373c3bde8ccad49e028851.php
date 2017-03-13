@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"G:\phpstudy\WWW\zxw/application/admin/index\view\render\left.html";i:1489418049;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:64:"G:\phpstudy\WWW\zxw/application/admin/index\view\render\top.html";i:1489415005;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
