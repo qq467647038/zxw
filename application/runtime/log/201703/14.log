@@ -1,10 +1,16 @@
+<<<<<<< HEAD
 [ 2017-03-14T17:37:33+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：1,851.33kb] [文件加载：42]
+=======
+[ 2017-03-14T10:05:18+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php
+[ log ] zxw.org/admin.php [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：1,118.77kb] [文件加载：34]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'index',
     1 => 'render',
     2 => 'index',
@@ -4268,11 +4274,26 @@
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'cache-control' => 'max-age=0',
+=======
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=5895930880',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'connection' => 'close',
   'host' => 'zxw.org',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4334,10 +4355,40 @@
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'cache-control' => 'max-age=0',
+=======
+[ info ] [ RUN ] app\index\controller\Login->index[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:18+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/captcha.html
+[ log ] zxw.org/admin.php/captcha.html [运行时间：0.026001s][吞吐率：38.46req/s] [内存消耗：940.87kb] [文件加载：29]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=5895930880',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://zxw.org/admin.php',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'connection' => 'close',
   'host' => 'zxw.org',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -4384,29 +4435,60 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:11:12+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,637.48kb] [文件加载：40]
+=======
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\zxw\application\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:28+08:00 ] 127.0.0.1 127.0.0.1 POST /admin.php/index/login/check.html
+[ log ] zxw.org/admin.php/index/login/check.html [运行时间：0.147203s][吞吐率：6.79req/s] [内存消耗：1,801.42kb] [文件加载：40]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'index',
+<<<<<<< HEAD
     1 => 'render',
     2 => 'index',
+=======
+    1 => 'login',
+    2 => 'check',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   ),
 )
 [ info ] [ HEADER ] array (
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
+<<<<<<< HEAD
   'accept-encoding' => 'gzip, deflate, sdch',
   'referer' => 'http://zxw.org/admin.php/index/index/index.html',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'cache-control' => 'max-age=0',
+=======
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zxw.org/admin.php',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zxw.org',
+  'accept' => '*/*',
+  'content-length' => '24',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'connection' => 'close',
   'host' => 'zxw.org',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -4417,13 +4499,39 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:11:18+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.066004s][吞吐率：15.15req/s] [内存消耗：1,637.48kb] [文件加载：40]
+=======
+  'name' => '1',
+  'pwd' => '1',
+  'verify' => 'vcpe',
+)
+[ info ] [ RUN ] app\index\controller\Login->check[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_manager` [ RunTime:0.062400s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zx_manager` WHERE  `name` = '1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `password` FROM `zx_manager` WHERE  `name` = '1' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `create_time` FROM `zx_manager` WHERE  `name` = '1' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:30+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/index/index.html
+[ log ] zxw.org/admin.php/index/index/index.html [运行时间：0.051602s][吞吐率：19.38req/s] [内存消耗：1,182.80kb] [文件加载：35]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'index',
+<<<<<<< HEAD
     1 => 'render',
+=======
+    1 => 'index',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
     2 => 'index',
   ),
 )
@@ -4431,16 +4539,24 @@
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
   'accept-encoding' => 'gzip, deflate, sdch',
+<<<<<<< HEAD
   'referer' => 'http://zxw.org/admin.php/index/index/index.html',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'cache-control' => 'max-age=0',
+=======
+  'referer' => 'http://zxw.org/admin.php',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'connection' => 'close',
   'host' => 'zxw.org',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.008000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4450,6 +4566,16 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:11:18+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,637.48kb] [文件加载：40]
+=======
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:30+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
+[ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：1,185.51kb] [文件加载：35]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -4468,12 +4594,16 @@
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+<<<<<<< HEAD
   'cache-control' => 'max-age=0',
+=======
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'connection' => 'close',
   'host' => 'zxw.org',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.009000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4483,6 +4613,16 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:11:18+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,637.48kb] [文件加载：40]
+=======
+[ info ] [ RUN ] app\index\controller\Render->index[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:30+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/top.html
+[ log ] zxw.org/admin.php/index/render/top.html [运行时间：0.022001s][吞吐率：45.45req/s] [内存消耗：1,185.84kb] [文件加载：35]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -4490,23 +4630,35 @@
   array (
     0 => 'index',
     1 => 'render',
+<<<<<<< HEAD
     2 => 'index',
+=======
+    2 => 'top',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   ),
 )
 [ info ] [ HEADER ] array (
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
   'accept-encoding' => 'gzip, deflate, sdch',
+<<<<<<< HEAD
   'referer' => 'http://zxw.org/admin.php/index/index/index.html',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'cache-control' => 'max-age=0',
+=======
+  'referer' => 'http://zxw.org/admin.php/index/render/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'connection' => 'close',
   'host' => 'zxw.org',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4516,6 +4668,16 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:11:18+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.056004s][吞吐率：17.86req/s] [内存消耗：1,637.48kb] [文件加载：40]
+=======
+[ info ] [ RUN ] app\index\controller\Render->top[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\top.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:31+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/left.html
+[ log ] zxw.org/admin.php/index/render/left.html [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：1,185.06kb] [文件加载：35]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -4523,23 +4685,35 @@
   array (
     0 => 'index',
     1 => 'render',
+<<<<<<< HEAD
     2 => 'index',
+=======
+    2 => 'left',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   ),
 )
 [ info ] [ HEADER ] array (
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
   'accept-encoding' => 'gzip, deflate, sdch',
+<<<<<<< HEAD
   'referer' => 'http://zxw.org/admin.php/index/index/index.html',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'cache-control' => 'max-age=0',
+=======
+  'referer' => 'http://zxw.org/admin.php/index/render/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'connection' => 'close',
   'host' => 'zxw.org',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.008001s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4549,6 +4723,16 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:11:19+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：1,637.48kb] [文件加载：40]
+=======
+[ info ] [ RUN ] app\index\controller\Render->left[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\left.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:31+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/aside_img.png
+[ log ] zxw.org/admin.php/index/render/aside_img.png [运行时间：0.018001s][吞吐率：55.55req/s] [内存消耗：917.98kb] [文件加载：31]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -4556,23 +4740,34 @@
   array (
     0 => 'index',
     1 => 'render',
+<<<<<<< HEAD
     2 => 'index',
+=======
+    2 => 'aside_img.png',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   ),
 )
 [ info ] [ HEADER ] array (
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
   'accept-encoding' => 'gzip, deflate, sdch',
+<<<<<<< HEAD
   'referer' => 'http://zxw.org/admin.php/index/index/index.html',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'cache-control' => 'max-age=0',
+=======
+  'referer' => 'http://zxw.org/admin.php/index/render/left.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'connection' => 'close',
   'host' => 'zxw.org',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4582,6 +4777,13 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:11:19+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,637.48kb] [文件加载：40]
+=======
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:31+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/right.html
+[ log ] zxw.org/admin.php/index/render/right.html [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：1,184.51kb] [文件加载：35]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -4589,23 +4791,35 @@
   array (
     0 => 'index',
     1 => 'render',
+<<<<<<< HEAD
     2 => 'index',
+=======
+    2 => 'right',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   ),
 )
 [ info ] [ HEADER ] array (
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
   'accept-encoding' => 'gzip, deflate, sdch',
+<<<<<<< HEAD
   'referer' => 'http://zxw.org/admin.php/index/index/index.html',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'cache-control' => 'max-age=0',
+=======
+  'referer' => 'http://zxw.org/admin.php/index/render/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'connection' => 'close',
   'host' => 'zxw.org',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.007001s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4615,13 +4829,27 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:11:19+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：1,637.48kb] [文件加载：40]
+=======
+[ info ] [ RUN ] app\index\controller\Render->right[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\right.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/index/index.html
+[ log ] zxw.org/admin.php/index/index/index.html [运行时间：0.020001s][吞吐率：50.00req/s] [内存消耗：1,068.03kb] [文件加载：33]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'index',
+<<<<<<< HEAD
     1 => 'render',
+=======
+    1 => 'index',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
     2 => 'index',
   ),
 )
@@ -4629,7 +4857,11 @@
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
   'accept-encoding' => 'gzip, deflate, sdch',
+<<<<<<< HEAD
   'referer' => 'http://zxw.org/admin.php/index/index/index.html',
+=======
+  'referer' => 'http://zxw.org/admin.php',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -4639,6 +4871,7 @@
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.008000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4648,6 +4881,16 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:11:19+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：1,637.48kb] [文件加载：40]
+=======
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
+[ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.018001s][吞吐率：55.55req/s] [内存消耗：1,069.98kb] [文件加载：33]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -4672,6 +4915,7 @@
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.006001s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4681,6 +4925,16 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:11:20+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.055004s][吞吐率：18.18req/s] [内存消耗：1,637.48kb] [文件加载：40]
+=======
+[ info ] [ RUN ] app\index\controller\Render->index[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/top.html
+[ log ] zxw.org/admin.php/index/render/top.html [运行时间：0.016001s][吞吐率：62.50req/s] [内存消耗：1,069.99kb] [文件加载：33]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -4688,14 +4942,22 @@
   array (
     0 => 'index',
     1 => 'render',
+<<<<<<< HEAD
     2 => 'index',
+=======
+    2 => 'top',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   ),
 )
 [ info ] [ HEADER ] array (
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
   'accept-encoding' => 'gzip, deflate, sdch',
+<<<<<<< HEAD
   'referer' => 'http://zxw.org/admin.php/index/index/index.html',
+=======
+  'referer' => 'http://zxw.org/admin.php/index/render/index.html',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -4705,6 +4967,7 @@
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.007001s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4714,6 +4977,16 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:11:20+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.056004s][吞吐率：17.86req/s] [内存消耗：1,637.48kb] [文件加载：40]
+=======
+[ info ] [ RUN ] app\index\controller\Render->top[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\top.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/left.html
+[ log ] zxw.org/admin.php/index/render/left.html [运行时间：0.015001s][吞吐率：66.66req/s] [内存消耗：1,070.05kb] [文件加载：33]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -4721,14 +4994,22 @@
   array (
     0 => 'index',
     1 => 'render',
+<<<<<<< HEAD
     2 => 'index',
+=======
+    2 => 'left',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   ),
 )
 [ info ] [ HEADER ] array (
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
   'accept-encoding' => 'gzip, deflate, sdch',
+<<<<<<< HEAD
   'referer' => 'http://zxw.org/admin.php/index/index/index.html',
+=======
+  'referer' => 'http://zxw.org/admin.php/index/render/index.html',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -4738,6 +5019,7 @@
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.008001s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4747,6 +5029,16 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:11:20+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,637.48kb] [文件加载：40]
+=======
+[ info ] [ RUN ] app\index\controller\Render->left[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\left.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/aside_img.png
+[ log ] zxw.org/admin.php/index/render/aside_img.png [运行时间：0.016001s][吞吐率：62.50req/s] [内存消耗：918.17kb] [文件加载：31]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -4754,23 +5046,34 @@
   array (
     0 => 'index',
     1 => 'render',
+<<<<<<< HEAD
     2 => 'index',
+=======
+    2 => 'aside_img.png',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   ),
 )
 [ info ] [ HEADER ] array (
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
   'accept-encoding' => 'gzip, deflate, sdch',
+<<<<<<< HEAD
   'referer' => 'http://zxw.org/admin.php/index/index/index.html',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+=======
+  'referer' => 'http://zxw.org/admin.php/index/render/left.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'cache-control' => 'max-age=0',
   'connection' => 'close',
   'host' => 'zxw.org',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4780,13 +5083,24 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:11:20+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：1,637.48kb] [文件加载：40]
+=======
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/index/index.html
+[ log ] zxw.org/admin.php/index/index/index.html [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,068.03kb] [文件加载：33]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'index',
+<<<<<<< HEAD
     1 => 'render',
+=======
+    1 => 'index',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
     2 => 'index',
   ),
 )
@@ -4794,7 +5108,11 @@
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
   'accept-encoding' => 'gzip, deflate, sdch',
+<<<<<<< HEAD
   'referer' => 'http://zxw.org/admin.php/index/index/index.html',
+=======
+  'referer' => 'http://zxw.org/admin.php',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -4804,6 +5122,7 @@
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4813,6 +5132,16 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:12:22+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,637.36kb] [文件加载：40]
+=======
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
+[ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,069.98kb] [文件加载：33]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -4837,6 +5166,7 @@
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.025001s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4846,6 +5176,16 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:12:24+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：1,637.47kb] [文件加载：40]
+=======
+[ info ] [ RUN ] app\index\controller\Render->index[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/left.html
+[ log ] zxw.org/admin.php/index/render/left.html [运行时间：0.015001s][吞吐率：66.66req/s] [内存消耗：1,070.05kb] [文件加载：33]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -4853,14 +5193,22 @@
   array (
     0 => 'index',
     1 => 'render',
+<<<<<<< HEAD
     2 => 'index',
+=======
+    2 => 'left',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   ),
 )
 [ info ] [ HEADER ] array (
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
   'accept-encoding' => 'gzip, deflate, sdch',
+<<<<<<< HEAD
   'referer' => 'http://zxw.org/admin.php/index/index/index.html',
+=======
+  'referer' => 'http://zxw.org/admin.php/index/render/index.html',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -4870,6 +5218,7 @@
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4879,21 +5228,40 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:12:26+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/index/index.html
 [ log ] zxw.org/admin.php/index/index/index.html [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：1,067.93kb] [文件加载：33]
+=======
+[ info ] [ RUN ] app\index\controller\Render->left[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\left.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/top.html
+[ log ] zxw.org/admin.php/index/render/top.html [运行时间：0.016001s][吞吐率：62.50req/s] [内存消耗：1,069.99kb] [文件加载：33]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'index',
+<<<<<<< HEAD
     1 => 'index',
     2 => 'index',
+=======
+    1 => 'render',
+    2 => 'top',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   ),
 )
 [ info ] [ HEADER ] array (
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
   'accept-encoding' => 'gzip, deflate, sdch',
+<<<<<<< HEAD
   'referer' => 'http://zxw.org/admin.php',
+=======
+  'referer' => 'http://zxw.org/admin.php/index/render/index.html',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -4903,14 +5271,24 @@
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Index.php ]
 [ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\index\index.html [ array (
+=======
+[ info ] [ RUN ] app\index\controller\Render->top[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\top.html [ array (
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 ) ]
 [ info ] [ LOG ] INIT File
 
 ---------------------------------------------------------------
+<<<<<<< HEAD
 [ 2017-03-14T18:12:26+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：1,637.47kb] [文件加载：40]
+=======
+[ 2017-03-14T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/aside_img.png
+[ log ] zxw.org/admin.php/index/render/aside_img.png [运行时间：0.017001s][吞吐率：58.82req/s] [内存消耗：918.17kb] [文件加载：31]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -4918,23 +5296,34 @@
   array (
     0 => 'index',
     1 => 'render',
+<<<<<<< HEAD
     2 => 'index',
+=======
+    2 => 'aside_img.png',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   ),
 )
 [ info ] [ HEADER ] array (
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
   'accept-encoding' => 'gzip, deflate, sdch',
+<<<<<<< HEAD
   'referer' => 'http://zxw.org/admin.php/index/index/index.html',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+=======
+  'referer' => 'http://zxw.org/admin.php/index/render/left.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'cache-control' => 'max-age=0',
   'connection' => 'close',
   'host' => 'zxw.org',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -4944,6 +5333,13 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:12:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/index/index.html
 [ log ] zxw.org/admin.php/index/index/index.html [运行时间：0.023002s][吞吐率：43.47req/s] [内存消耗：1,067.93kb] [文件加载：33]
+=======
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/index/index.html
+[ log ] zxw.org/admin.php/index/index/index.html [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,068.03kb] [文件加载：33]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -4974,8 +5370,13 @@
 [ info ] [ LOG ] INIT File
 
 ---------------------------------------------------------------
+<<<<<<< HEAD
 [ 2017-03-14T18:12:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.041003s][吞吐率：24.39req/s] [内存消耗：1,702.98kb] [文件加载：43]
+=======
+[ 2017-03-14T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
+[ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.018001s][吞吐率：55.55req/s] [内存消耗：1,069.98kb] [文件加载：33]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -5000,11 +5401,15 @@
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
+=======
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ RUN ] app\index\controller\Render->index[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
 [ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\index.html [ array (
 ) ]
 [ info ] [ LOG ] INIT File
+<<<<<<< HEAD
 [ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.008000s ]
 [ sql ] [ SQL ] SELECT * FROM `zx_aside` `a` INNER JOIN `zx_subaside` `s` ON `a`.`id`=`s`.`supaside` [ RunTime:0.000000s ]
@@ -5012,6 +5417,12 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:12:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/top.html
 [ log ] zxw.org/admin.php/index/render/top.html [运行时间：0.043003s][吞吐率：23.25req/s] [内存消耗：1,702.98kb] [文件加载：43]
+=======
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/top.html
+[ log ] zxw.org/admin.php/index/render/top.html [运行时间：0.018001s][吞吐率：55.55req/s] [内存消耗：1,069.99kb] [文件加载：33]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -5036,11 +5447,15 @@
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
+=======
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ RUN ] app\index\controller\Render->top[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
 [ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\top.html [ array (
 ) ]
 [ info ] [ LOG ] INIT File
+<<<<<<< HEAD
 [ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.009000s ]
 [ sql ] [ SQL ] SELECT * FROM `zx_aside` `a` INNER JOIN `zx_subaside` `s` ON `a`.`id`=`s`.`supaside` [ RunTime:0.001000s ]
@@ -5048,6 +5463,12 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:12:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/left.html
 [ log ] zxw.org/admin.php/index/render/left.html [运行时间：0.065003s][吞吐率：15.38req/s] [内存消耗：1,749.86kb] [文件加载：44]
+=======
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/left.html
+[ log ] zxw.org/admin.php/index/render/left.html [运行时间：0.016001s][吞吐率：62.50req/s] [内存消耗：1,070.05kb] [文件加载：33]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -5072,6 +5493,7 @@
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ RUN ] app\index\controller\Render->left[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
 [ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\left.html [ array (
@@ -5085,6 +5507,16 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:12:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/aside_img.png
 [ log ] zxw.org/admin.php/index/render/aside_img.png [运行时间：0.044003s][吞吐率：22.73req/s] [内存消耗：1,725.29kb] [文件加载：45]
+=======
+[ info ] [ RUN ] app\index\controller\Render->left[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\left.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:42+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/aside_img.png
+[ log ] zxw.org/admin.php/index/render/aside_img.png [运行时间：0.017001s][吞吐率：58.82req/s] [内存消耗：918.17kb] [文件加载：31]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -5108,6 +5540,7 @@
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -5117,6 +5550,13 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:12:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/right.html
 [ log ] zxw.org/admin.php/index/render/right.html [运行时间：0.061004s][吞吐率：16.39req/s] [内存消耗：1,702.90kb] [文件加载：43]
+=======
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:43+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/right.html
+[ log ] zxw.org/admin.php/index/render/right.html [运行时间：0.046002s][吞吐率：21.74req/s] [内存消耗：1,070.00kb] [文件加载：33]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -5141,11 +5581,15 @@
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
+=======
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ RUN ] app\index\controller\Render->right[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
 [ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\right.html [ array (
 ) ]
 [ info ] [ LOG ] INIT File
+<<<<<<< HEAD
 [ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.008001s ]
 [ sql ] [ SQL ] SELECT * FROM `zx_aside` `a` INNER JOIN `zx_subaside` `s` ON `a`.`id`=`s`.`supaside` [ RunTime:0.000000s ]
@@ -5186,6 +5630,12 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:13:40+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：1,638.87kb] [文件加载：40]
+=======
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:43+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/right.html
+[ log ] zxw.org/admin.php/index/render/right.html [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：1,070.00kb] [文件加载：33]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -5193,14 +5643,22 @@
   array (
     0 => 'index',
     1 => 'render',
+<<<<<<< HEAD
     2 => 'index',
+=======
+    2 => 'right',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   ),
 )
 [ info ] [ HEADER ] array (
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
   'accept-encoding' => 'gzip, deflate, sdch',
+<<<<<<< HEAD
   'referer' => 'http://zxw.org/admin.php/index/index/index.html',
+=======
+  'referer' => 'http://zxw.org/admin.php/index/render/index.html',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -5210,6 +5668,7 @@
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.007001s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
@@ -5219,6 +5678,16 @@
 ---------------------------------------------------------------
 [ 2017-03-14T18:13:41+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
 [ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,638.87kb] [文件加载：40]
+=======
+[ info ] [ RUN ] app\index\controller\Render->right[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\right.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-14T10:05:43+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/right.html
+[ log ] zxw.org/admin.php/index/render/right.html [运行时间：0.042003s][吞吐率：23.81req/s] [内存消耗：1,070.00kb] [文件加载：33]
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 [ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -5226,14 +5695,22 @@
   array (
     0 => 'index',
     1 => 'render',
+<<<<<<< HEAD
     2 => 'index',
+=======
+    2 => 'right',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   ),
 )
 [ info ] [ HEADER ] array (
   'cookie' => 'pgv_pvi=5895930880; usesession=k3d0nlr2ha61vh7i2h2r4m2f56',
   'accept-language' => 'zh-CN,zh;q=0.8',
   'accept-encoding' => 'gzip, deflate, sdch',
+<<<<<<< HEAD
   'referer' => 'http://zxw.org/admin.php/index/index/index.html',
+=======
+  'referer' => 'http://zxw.org/admin.php/index/render/index.html',
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
   'upgrade-insecure-requests' => '1',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -5243,10 +5720,17 @@
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.008000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.008001s ]
 [ sql ] [ SQL ] SELECT * FROM `zx_aside` `a` INNER JOIN `zx_subaside` `s` ON `a`.`id`=`s`.`supaside` [ RunTime:0.001000s ]
+=======
+[ info ] [ RUN ] app\index\controller\Render->right[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\right.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+>>>>>>> 4ff339fcc3eeb89df79b2a57960c279ccc0b7a75
 
 ---------------------------------------------------------------
