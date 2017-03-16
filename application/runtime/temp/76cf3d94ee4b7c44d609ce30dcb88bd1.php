@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"D:\phpStudy\WWW\zxw/application/admin/index\view\render\left.html";i:1489649244;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,28 +61,26 @@
 			</div>
 			<div class="ddd">
 				<aside>
-					{volist name="aside" id="vo"}
-						{php}
+					<?php if(is_array($aside) || $aside instanceof \think\Collection || $aside instanceof \think\Paginator): $i = 0; $__LIST__ = $aside;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;
 							if($vo['pid']==0){
-						{/php}
+						 ?>
 								</ol>
 								<ol>
-									<li class="main">{$vo['name']}</li>
-						{php}
+									<li class="main"><?php echo $vo['name']; ?></li>
+						<?php 
 							}else{
-						{/php}
-								<li class="child"><a href="{$vo['url']}" target="main_frame">{$vo['name']}</a></li>
-						{php}	
+						 ?>
+								<li class="child"><a href="<?php echo $vo['url']; ?>" target="main_frame"><?php echo $vo['name']; ?></a></li>
+						<?php 	
 							}
-						{/php}
-					{/volist}
+						 endforeach; endif; else: echo "" ;endif; ?>
 		
 				</aside>
 			</div>
 		</div>
 	</div>
-	<a href="{:url('Aside/add')}" target="main_frame">添加</a>
-	<a href="{:url('User/logout')}">退出</a>
+	<a href="<?php echo url('Aside/add'); ?>" target="main_frame">添加</a>
+	<a href="<?php echo url('User/logout'); ?>">退出</a>
 <script>
 var mainlen = $(".main").length;
 for(var i=0;i<mainlen;i++){

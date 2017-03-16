@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>左栏目列表</title>
+	<style type="text/css">
+		.wrap{
+			background-color: #f3f1f5;
+		}
+		.aside_title{
+			background-color: #f9f9f9;
+			height:45px;
+			line-height: 45px;
+		}
+		.aside_title td{
+			padding-left: 30px;
+		}
+		.aside_sub{
+			background-color: #ffffff;
+		}
+		.aside_list td{
+			border:none;
+		}
+		tr{
+			width:100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div>
+			<table class="aside_list" cellspacing="0" cellpadding="0">
+				{volist name="list" id="vo" key="i"}
+				{php}
+					if($vo['pid'] == 0){
+				{/php}
+						</tr>
+						<tr class="aside_title">
+							<td class="column5" colspan="5">{$vo.name}</td>
+						</tr>
+						<tr class="aside_sub">
+				{php}
+					}else{
+						if($vo['sort'] == 6 || $vo['sort'] == 11 || $vo['sort'] == 16 || $vo['sort'] == 21){
+				{/php}
+							</tr><tr class="aside_sub">
+				{php}
+						}
+				{/php}
+							<td><input type="checkbox"><a href="">{$vo.name}</a></td>
+				{php}
+					}
+				{/php}
+				{/volist}
+			</table>
+		</div>
+	</div>
+</body>
+</html>

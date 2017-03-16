@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"D:\phpStudy\WWW\zxw/application/admin/index\view\login\index.html";i:1489375336;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"D:\phpStudy\WWW\zxw/application/admin/index\view\login\index.html";i:1489631990;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,7 +60,7 @@
 						},2000);
 					}
 					
-					if(data.status == 1 & data.url == '')
+					if(data.status == 0)
 					{
 						setTimeout(function(){
 							window.location.reload();

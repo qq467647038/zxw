@@ -35,10 +35,9 @@ class User extends Model
 		//设置cookie值
 		$time = time();
 		$shell = $this->shell($data['name'],$result[0]);
-		$_COOKIE[config('cookie.name')] = $shell.'_'.$time;
-		
+		setcookie(config('cookie.name'), $shell.'_'.$time, 0, '/');
 		//设置session值
-		$_SESSION[config('session.name')] = $shell;
+		session(config('session.name'), $shell);
 		
 		return $info;
 	}
