@@ -57,4 +57,26 @@ class Aside extends Common
 		$this->assign("list",$arr);
 		return $this->fetch();
 	}
+	
+	public function edit(){
+		$aside = model("Aside");
+		$id = input('get.id');
+		$result = $aside->where("id",$id)->find();
+		$rows = $aside->where("pid",0)->order("sort asc")->select();
+		
+		$this->assign('rows',$rows);
+		$this->assign('result',$result);
+		return $this->fetch();
+	}
+	
+	public function change(){
+		$data = input('get.aside/a');
+		$aside = model("Aside");
+		$res = $aside->save($data,['id' => input("get.id")]);
+		if($res){
+			$this->success("更新成功！");
+		}else{
+			$this->error("更新失败！");
+		}
+	}
 }

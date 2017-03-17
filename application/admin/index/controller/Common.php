@@ -37,19 +37,19 @@ class Common extends Controller
 		
 		if(!cookie($cookie)){
 			$this->publicout();
-			$this->error("尚未登录，请先登录！",url('Login/index'));
+			echo '<script>alert("尚未登录，请先登录！");parent.location.href="'.url('Login/index').'"</script>';
 		}
 
 		$arr = explode('_',cookie($cookie));
 		if(session($session) != $arr[0]){
 			$this->publicout();
-			$this->error("账户异常，重新登录！",url('Login/index'));
+			echo '<script>alert("账户异常，重新登录！");parent.location.href="'.url('Login/index').'"</script>';
 		}
 		
 		$time = time();
 		if($time>$arr[1]+config('cookie.expire')){
 			$this->publicout();
-			$this->error("登录超时，重新登录！",url('Login/index'));
+			echo '<script>alert("登录超时，重新登录！");parent.location.href="'.url('Login/index').'"</script>';
 		}
 		
 		setcookie($cookie,$arr[0].'_'.$time,0,'/');

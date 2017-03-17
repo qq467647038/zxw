@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"D:\phpStudy\WWW\zxw/application/admin/index\view\render\index.html";i:1489658365;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"D:\phpStudy\WWW\zxw/application/admin/index\view\render\index.html";i:1489717693;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +17,7 @@
 		<frame src="top.html" noresize="noresize" frameborder="0" scrolling="no" marginwidth="0" marginheight="0"/>
 		<frameset cols="224,*">
 			<frame src="left.html" id="left_frame" name="left_frame" noresize="noresize" frameborder="0" marginwidth="0" marginheight="0"/>
-			<frame src="right.html" name="main_frame" noresize="noresize" frameborder="0" marginwidth="0" marginheight="0"/>
+			<frame src="right.html" name="main_frame" style="background-color:#f3f1f5;" noresize="noresize" frameborder="0" marginwidth="0" marginheight="0"/>
 		</frameset>
 	</frameset>
 	<noframes>
