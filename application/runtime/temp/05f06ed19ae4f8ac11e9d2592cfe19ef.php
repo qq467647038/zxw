@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:64:"D:\phpStudy\WWW\zxw/application/admin/index\view\aside\edit.html";i:1489734018;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:64:"D:\phpStudy\WWW\zxw/application/admin/index\view\aside\edit.html";i:1490236571;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,10 +18,10 @@
 			border:1px solid #eaeaea;
 			border-collapse: collapse;
 		}
-		.aside_edit td{
-			height:60px;
-			line-height:60px;
-		}
+	    .aside_edit>tbody>tr>td{
+	      height:60px;
+	      line-height:60px;
+	    }
 		table{
 			background-color: #ffffff;
 		}

@@ -10,13 +10,22 @@ class Common extends Controller
      public function _initialize()
     {
         //获取侧边主菜单
-		$this->mainmenu();
+		$this->asidemenu();
+
+		//获取上边主菜单
+		$this->navmenu();
 		
 		//验证登录时长
 		$this->cookies();
     }
+
+    public function navmenu(){
+		$data = Db::name('aside')->where(['pid'=>0,'nav_show'=>'1'])->order("sort asc")->select();
+		
+		$this->assign("data",$data);
+    }
 	
-	public function mainmenu(){
+	public function asidemenu(){
 		$data = Db::name('aside')->where(['pid'=>0,'show'=>'1'])->order("sort asc")->select();
 		$arr = array();
 		foreach($data as $k=>$v){
