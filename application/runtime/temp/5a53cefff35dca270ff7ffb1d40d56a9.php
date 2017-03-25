@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"D:\phpStudy\WWW\zxw/application/admin/index\view\company\honour.html";i:1490339906;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"D:\phpStudy\WWW\zxw/application/admin/index\view\company\honour.html";i:1490434687;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,6 +78,22 @@
       display: inline-block;
       margin-right: 2px;
     }
+    .honour_list{
+      padding:10px;
+    }
+    .imgList>div+div{
+      vertical-align: middle;
+      margin-top: 5px;
+    }
+    .imgList button{
+      border:none;
+      background-color: #528fc7;
+      color: #fff;
+      font-weight: bold;
+      padding:10px 18px;
+      margin-right: 15px;
+      opacity: 0;
+    }
   </style>
 </head>
 <body>
@@ -90,7 +106,7 @@
             <td>荣誉相册展示列表：</td>
             <td>
               <div class="honour_list" id="honour_list">
-                <?php if(is_array($photo) || $photo instanceof \think\Collection || $photo instanceof \think\Paginator): $i = 0; $__LIST__ = $photo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                <?php if(is_array($photo) || $photo instanceof \think\Collection || $photo instanceof \think\Paginator): $i = 0;$__LIST__ = is_array($photo) ? array_slice($photo,0,5, true) : $photo->slice(0,5, true); if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                   <img src="/<?php echo $vo; ?>" alt="" style="width:227px;height:277px;">
                 <?php endforeach; endif; else: echo "" ;endif; ?>
               </div>
@@ -104,6 +120,7 @@
                 window.onload = function(){
                   var honour_list = document.getElementById("imgList");
                   $("#fileup").change(function(){
+                    $("#up").css('opacity','1');
                     var files = this.files;
                     if(files.length><?php echo config('image.num'); ?>){
                       alert("每次上传的图片不能多于"+<?php echo config('image.num'); ?>+"张！");
@@ -140,7 +157,7 @@
             <td>上传图片预览列表</td>
             <td>
               <div class="imgList" id="imgList">
-                <button>提交上传</button>
+                <div><button id="up">提交上传</button></div>
               </div>
             </td>
           </tr>

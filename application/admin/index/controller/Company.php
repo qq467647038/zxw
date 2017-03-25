@@ -112,7 +112,6 @@ class Company extends Common
 			$this->jsonDecode();
 		}
 	
-		
 		return $this->fetch();
 	}
 
@@ -137,6 +136,7 @@ class Company extends Common
 		{
 			return $photo;
 		}
+		
 		$this->assign('row',$row);
 		$this->assign('photo',$photo);
 	}
