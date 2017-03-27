@@ -116,6 +116,24 @@
             <td>
               <input type="file" id="fileup" multiple="multiple">
               <script>
+                $(".honour_list img").click(function(){
+                  if(!confirm('是否确定删除！'))
+                  {
+                    return false;
+                  }
+                  $data = $(this).attr('src');
+                  $.ajax({
+                    type:"GET",
+                    url:"{:url('Company/del')}",
+                    data:{data:$data},
+                    success:function(data){
+                      if(data.code == 1){
+                        window.location.reload();
+                      }
+                    }
+
+                  });
+                });
                 window.onload = function(){
                   var honour_list = document.getElementById("imgList");
                   $("#fileup").change(function(){

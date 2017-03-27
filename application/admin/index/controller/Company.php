@@ -131,7 +131,7 @@ class Company extends Common
 		$Company = Db::name('Company');
 		$column = $Company->where('id',2)->column('photo');
 		$row = $Company->where('id',2)->find();
-		$photo = json_decode($column[0]);
+		$photo = json_decode($column[0],true);
 		if($backtrack)
 		{
 			return $photo;
@@ -139,5 +139,46 @@ class Company extends Common
 		
 		$this->assign('row',$row);
 		$this->assign('photo',$photo);
+	}
+
+	public function del(){
+		$arr = array();
+		$data = input('get.data');
+		$dan = ltrim($data,'/');
+		$photo = $this->jsonDecode(true);
+		for($p=0;$p<count($photo);$p++)
+		{
+			if($photo[$p] == $dan)
+			{
+				continue;
+			}
+			else{
+				array_push($arr,$photo[$p]);
+			}
+		}
+		$this->jsonEncode($arr);
+	}
+
+	public function contact(){
+		// 是否为 POST 请求
+		$Company = Db::name('Company');
+		if (Request::instance()->isPost())
+		{
+			$data = input('post.contact/a');
+			$data['update_time'] = time();
+			$res = $Company->where('id',3)->update($data);
+
+			if($res){
+				$this->success("更新成功！");
+			}else{
+				$this->error("更新失败！");
+			}
+		}
+		else{
+			$row = $Company->where('id',3)->find();
+			$this->assign('contact',$row);
+		}
+
+		return $this->fetch();
 	}
 }

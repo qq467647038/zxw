@@ -5273,3 +5273,177 @@
 [ sql ] [ SQL ] SELECT * FROM `zx_company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
 
 ---------------------------------------------------------------
+[ 2017-03-25T17:55:17+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/company/honour.html
+[ log ] zxw.org/admin.php/index/company/honour.html [运行时间：0.089005s][吞吐率：11.24req/s] [内存消耗：1,979.84kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'company',
+    2 => 'honour',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'usesession=jg11l9u5on1nut5rpacpe8sef6; usecookie=ece02b09068d2076616cd803745a90f2_1490434846',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://zxw.org/admin.php/index/company/honour.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Company->honour[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Company.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\company\honour.html [ array (
+  0 => 'aside',
+  1 => 'data',
+  2 => 'row',
+  3 => 'photo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020002s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 1  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 2  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 3  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 4  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 5  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 6  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 7  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 8  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 43  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 44  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `nav_show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_company` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `photo` FROM `zx_company` WHERE  `id` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-03-25T17:55:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/company/honour.html
+[ log ] zxw.org/admin.php/index/company/honour.html [运行时间：0.079005s][吞吐率：12.66req/s] [内存消耗：1,851.35kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'company',
+    2 => 'honour',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'usesession=jg11l9u5on1nut5rpacpe8sef6; usecookie=ece02b09068d2076616cd803745a90f2_1490435717',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://zxw.org/admin.php/index/company/honour.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Company->honour[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Company.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\company\honour.html [ array (
+  0 => 'aside',
+  1 => 'data',
+  2 => 'row',
+  3 => 'photo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 1  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 2  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 3  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 4  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 5  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 6  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 7  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 8  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 43  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 44  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `nav_show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_company` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `photo` FROM `zx_company` WHERE  `id` = 2 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-03-25T17:57:39+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/company/honour.html
+[ log ] zxw.org/admin.php/index/company/honour.html [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：1,851.35kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'company',
+    2 => 'honour',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'usesession=jg11l9u5on1nut5rpacpe8sef6; usecookie=ece02b09068d2076616cd803745a90f2_1490435757',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://zxw.org/admin.php/index/company/honour.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Company->honour[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Company.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\company\honour.html [ array (
+  0 => 'aside',
+  1 => 'data',
+  2 => 'row',
+  3 => 'photo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007001s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 1  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 2  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 3  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 4  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 5  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 6  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 7  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 8  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 43  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 44  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `nav_show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_company` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `photo` FROM `zx_company` WHERE  `id` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"D:\phpStudy\WWW\zxw/application/admin/index\view\company\honour.html";i:1490434687;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"D:\phpStudy\WWW\zxw/application/admin/index\view\company\honour.html";i:1490619235;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -117,6 +117,24 @@
             <td>
               <input type="file" id="fileup" multiple="multiple">
               <script>
+                $(".honour_list img").click(function(){
+                  if(!confirm('是否确定删除！'))
+                  {
+                    return false;
+                  }
+                  $data = $(this).attr('src');
+                  $.ajax({
+                    type:"GET",
+                    url:"<?php echo url('Company/del'); ?>",
+                    data:{data:$data},
+                    success:function(data){
+                      if(data.code == 1){
+                        window.location.reload();
+                      }
+                    }
+
+                  });
+                });
                 window.onload = function(){
                   var honour_list = document.getElementById("imgList");
                   $("#fileup").change(function(){
