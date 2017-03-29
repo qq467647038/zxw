@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"D:\phpStudy\WWW\zxw/application/admin/index\view\group\design.html";i:1490585692;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"D:\phpStudy\WWW\zxw/application/admin/index\view\group\design.html";i:1490757062;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +37,11 @@
     li{
       padding:10px;
       list-style-type: none;
+      display: inline-block;
+    }
+    .chuangti li>img{
+      width:250px;
+      height:300px;
     }
   </style>
 </head>
@@ -49,7 +54,9 @@
           <dt>设计团队<span><a href="<?php echo url('Group/designAdd'); ?>" style="float: right;padding-right: 30px;">添加</a></span></dt>
           <dd>
             <ol>
-              <li><img src="123.png" alt=""></li>
+              <?php if(is_array($rows) || $rows instanceof \think\Collection || $rows instanceof \think\Paginator): $i = 0; $__LIST__ = $rows;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                <li><img src="/<?php echo $vo['photo']; ?>" alt=""></li>
+              <?php endforeach; endif; else: echo "" ;endif; ?>
             </ol>
           </dd>
         </dl>

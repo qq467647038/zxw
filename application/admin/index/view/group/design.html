@@ -36,6 +36,11 @@
     li{
       padding:10px;
       list-style-type: none;
+      display: inline-block;
+    }
+    .chuangti li>img{
+      width:250px;
+      height:300px;
     }
   </style>
 </head>
@@ -48,7 +53,9 @@
           <dt>设计团队<span><a href="{:url('Group/designAdd')}" style="float: right;padding-right: 30px;">添加</a></span></dt>
           <dd>
             <ol>
-              <li><img src="123.png" alt=""></li>
+              {volist name='rows' id='vo'}
+                <li><img src="/{$vo.photo}" alt=""></li>
+              {/volist}
             </ol>
           </dd>
         </dl>

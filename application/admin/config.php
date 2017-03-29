@@ -71,6 +71,7 @@ return [
 
     'image'                  =>[
         'num'          => 4,
+        'type'         => array('image/gif','image/jpeg','image/pjpeg')
     ],
 	
 ];
