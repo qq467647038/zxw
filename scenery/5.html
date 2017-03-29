@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.header4 li{
+		display: inline-block;
+		width:18%;
+		padding-top: 2%;
+	}
+	.header4 li:first-child{
+		margin-left: 2%;
+	}
+	.header4 img{
+		width:100%;
+	}
+	.footer4{
+		position: fixed;
+		bottom: 0;
+	}
+	.footer4 li{
+		display: inline-block;
+		width:17%;
+	}
+	.footer4 li img{
+		width:100%;
+	}
+	.footer4 li img[src='tou.png']{
+		width:140%;
+	}
+	#tou{
+		margin-right: 7%;
+	}
+	.footer4 ul{
+		margin-left: 2%;
+	}
+	section img{
+		position: absolute;
+		top:13%;
+		width:32%;
+		height:7%;
+		right:5%;
+	}
+</style>
+<body>
+	<img src="5.png" usemap="#nongchang" style="position: absolute;z-index: -1;height:100%;width:100%;" alt="">
+	<div class="wrap">
+		<header class="header4">
+			<div>
+				<ul>
+					<li><a href=""><img src="back.png" alt=""></a></li>
+					<li><a href=""><img src="hulu.png" alt=""></a></li>
+					<li><a href=""><img src="mihoutao.png" alt=""></a></li>
+					<li><a href=""><img src="huolongguo.png" alt=""></a></li>
+					<li><a href=""><img src="set.png" alt=""></a></li>
+				</ul>
+			</div>
+		</header>
+		<section>
+			<img src="wallet.png" alt="">
+		</section>
+		<footer class="footer4">
+			<ul>
+				<li><a href=""><img src="chucao.png" alt=""></a></li>
+				<li><a href=""><img src="jiaoshui.png" alt=""></a></li>
+				<li id="tou"><a href=""><img src="tou.png" alt=""></a></li>
+				<li><a href=""><img src="shifei.png" alt=""></a></li>
+				<li><a href=""><img src="shouge.png" alt=""></a></li>
+			</ul>
+		</footer>
+	</div>
+	<div style="width:200px;height:140px;background-color:red;position:absolute;left:3%;top:66%;opacity:0;cursor:pointer;" onclick="alert(1)"></div>
+	<map name="nongchang" id="nongchang">
+		<area shape="rect" coords="20,1180,285,1300" href ="/example/html/sun.html" target="_blank" alt="Sun" />
+	</map>
+</body>
+</html>
