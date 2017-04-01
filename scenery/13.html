@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		body
+		{
+			background-color: black;
+		}
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.wrap>div{
+			padding-left: 30px;
+			padding-top: 20px;
+			width:90%;
+			margin-left:2%;
+		}
+		p,td,.friend1{
+			font-size: 3em;
+		}
+		.div1{
+			background-color: #f7dcae;
+		}
+		.div1>div{
+			padding:2%;
+		}
+		.zhihuan{
+			text-align: center;
+			display: inline-block;
+			width:90%;
+		}
+		.div1 i{
+			background:url('./img/back.png')no-repeat;
+			background-size: 100% 100%;
+			height:40px;
+			width:30px;
+			display: inline-block;
+		}
+		.bgtp{
+			position:absolute;
+			z-index: -1;
+			width:104%;
+		}
+		.content{
+			background: url('./img/mxbbg.png')no-repeat;
+			background-size: 100% 100%;
+		}
+		.footContent{
+			margin-top: 30px;
+			background: url('./img/footbg.png')no-repeat;
+			background-size: 100% 100%;
+			padding:6% 0;
+		}
+		.content>div{
+			width:90%;
+			padding: 2% 5% 5% 5%;
+			margin-top: 3%;
+		}
+		.content div img:first-child{
+			width:25%;
+			vertical-align: middle;
+			margin-right: 20px;
+		}
+		.content div{
+			color: #fff;
+			font-weight: bold;
+		}
+		.friend1{
+			background-color: #ac8d69;
+			padding: 15px;
+			margin-top: 15px;
+		}
+		#shou{
+			height:100%;
+			width:100%;
+		}
+		.friend1>p{
+			display: inline-block;
+			float: right;
+		}
+		table
+		{
+			width:100%;
+		}
+	</style>
+	<div class="wrap">
+		<img class="bgtp" src="./img/bg.png" alt="">
+		<div>
+			<div class="div1" style="margin-top: 30px">
+				<div><i></i><p class="zhihuan">我的明细</p></div>
+			</div>
+			<div class="div1" style="margin-top: 30px">
+				<div><p style="text-align: left">消费粮票：123456</p></div>
+				<div><p style="text-align: left">目标粮票：123456</p></div>
+			</div>
+			<div class="content">
+				<div style="height: 50%">
+					<div class="tupianinfo">
+						<img class="zhuxing" src="./img/zhuxing.png" alt="">
+						<img class="zhuxing" src="./img/zhuxing.png" alt="">
+						<img class="zhuxing" src="./img/zhuxing.png" alt="">
+						<img class="zhuxing" src="./img/zhuxing.png" alt="">
+						<img class="zhuxing" src="./img/zhuxing.png" alt="">
+						<img class="zhuxing" src="./img/zhuxing.png" alt="">
+						<img class="zhuxing" src="./img/zhuxing.png" alt="">
+						<img class="zhuxing" src="./img/zhuxing.png" alt="">
+					</div>
+					<table>
+						<tr>
+							<td>个人信息：VIP0</td>
+						</tr>
+						<tr>
+							<td>VIP积分：1000</td>
+						</tr>
+						<tr>
+							<td>可得粮票：1000</td>
+						</tr>
+						<tr>
+							<td>已得粮票：800</td>
+						</tr>
+						<tr>
+							<td>溢出粮票：300</td>
+						</tr>
+						<tr></tr>
+						<tr>
+							<td>持有量：100</td>
+						</tr>
+						<tr>
+							<td>实价：0.23</td>
+						</tr>
+						<tr>
+							<td>总价量：23</td>
+						</tr>
+
+
+					</table>
+				</div>
+			</div>
+			<div class="info">
+				<p><img src="./img/maichu.png" alt="" style="margin: 20px;"><span>冻结票：1000</span></p>
+				<p><img src="./img/mairu.png" alt="" style="margin: 20px;"><span>已借量：10000</span></p>
+			</div>
+			<style>
+				.content div img:first-child{
+					margin-left: 22px;
+				}
+				.content div img.zhuxing{
+					width:55px;
+					vertical-align: bottom;
+					margin-top: 60px;
+				}
+				.tupianinfo{
+					border-bottom: 5px solid #f7dcae;
+				}
+				.info{
+					background-color: #f7dcae;
+					margin-top: 12px;
+					padding-bottom: 20px;
+				}
+				.content td{
+					color: #d8bd93;
+					font-size: 2.2em;
+				}
+				.content tr{
+					height: 60px;
+				}
+				.info p{
+					height:115px;
+				}
+				.info img{
+					vertical-align: middle;
+				}
+			</style>
+		</div>
+	</div>
+			<div class="footContent">
+				<div>
+					<img src="./img/sell.png" alt="" style="margin: 20px;">
+					<img src="./img/buy.png" alt="" style="margin: 20px;">
+					<img src="./img/photo.png" alt="" style="margin: 20px;">
+				</div>
+
+			</div>
+</body>
+</html>

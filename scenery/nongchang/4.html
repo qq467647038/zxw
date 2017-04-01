@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	*{
+		padding:0;
+		margin:0;
+	}
+	.ss{
+		position: relative;
+		width:50%;
+		margin-left: 25%;
+	}
+	.wrap>div{
+		padding-top: 3%;
+		width:70%;
+		margin-left: 15%;
+		height:1200px;
+	}
+	.keyong{
+		width:80%;
+		margin-left: 8%;
+		margin-top: 5%;
+		box-shadow: 1px 1px -5px #673b20 inset;
+		padding:2%;
+		background-color: #efcf92;
+	}
+	.keyong>div>img:nth-child(1){
+		width:130%;
+		vertical-align: middle;
+	}
+	.wrap input{
+		box-shadow:1px 1px 45px #dc8a40 inset;
+		border:none;
+		height:100px;
+		border-radius: 30px;
+		margin-left: 60px;
+		background-color: #dbad71;
+		padding-left: 15px
+	}
+	.keyong>div{
+		display: inline-block;
+		width:25%;
+	}
+	.keyong>div:last-child{
+		float: right;
+	}
+	.keyong>div:last-child img{
+		width:100%;
+	}
+	.keyong>div p{
+		margin-top: 10%;
+	}
+	.keyong td,.keyong1 td{
+		font-size: 2.5em;
+		font-weight: 900;
+		line-height: 200%;
+		color: #673b20;
+	}
+	td img{
+		width:25%;
+		margin-right: 2%;
+		float: right;
+		vertical-align: middle;
+	}
+	td{
+		padding-left: 2%;
+	}
+	.keyong1 tr{
+		height:100px;
+	}
+	.keyong1{
+		width:85%;
+		margin-left: 8%;
+		margin-top: 5%;
+	}
+	.keyong1 tr:nth-child(odd){
+		background-color: #dc8a40;
+	}
+	.keyong1 tr:nth-child(even){
+		background-color: #eea65c;
+	}
+</style>
+<body>
+	<div class="wrap">
+		<div style="background:url('png/bg1.png')no-repeat;background-size: 100% 100%;">
+			<div class="keyong">
+				<div><img src="png/keyong.png" alt=""></div>
+				<div><input type="text"></div>
+				<div>
+					<p><img src="png/zhihuan.png" alt=""></p>
+					<p><img src="png/mingxi.png" alt=""></p>
+				</div>
+			</div>
+			<div class="keyong">
+				<div><img src="png/nokeyong.png" alt=""></div>
+				<div><input type="text"></div>
+				<div>
+					<p><a href=""><img src="png/zhihuan.png" alt=""></a></p>
+					<p><img src="png/mingxi.png" alt=""></p>
+				</div>
+			</div>
+			<table class="keyong1" cellpadding="0" cellspacing="0">
+				<tr>
+					<td>余额：50<span><a href=""><img src="png/mingxi.png" alt=""></a><img src="png/tixian.png" alt=""></span></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>金米：50<span><img src="png/mingxi.png" alt=""><img src="png/xiaofei.png" alt=""></span></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>红包：50<span><img src="png/mingxi.png" alt=""><img src="png/xiaofei.png" alt=""></span></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>股金：50<span><img src="png/mingxi.png" alt=""><img src="png/xiaofei.png" alt=""></span></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>队票：50<span><img src="png/mingxi.png" alt=""><img src="png/shiyong.png" alt=""></span></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>电子股：50<span><img src="png/mingxi.png" alt=""></span></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

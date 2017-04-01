@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="./style/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<style>
+		body
+		{
+			background-color: black;
+		}
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.wrap>div{
+			padding-left: 30px;
+			padding-top: 20px;
+			width:90%;
+			margin-left:2%;
+		}
+		p,td,th.friend1{
+			font-size: 3em;
+		}
+		.div1{
+			background-color: #f7dcae;
+		}
+		.div1>div{
+			padding:2%;
+		}
+		.zhihuan{
+			text-align: center;
+			display: inline-block;
+			width:90%;
+		}
+		.div1 i{
+			background:url('./img/back.png')no-repeat;
+			background-size: 100% 100%;
+			height:40px;
+			width:30px;
+			display: inline-block;
+		}
+		.bgtp{
+			position:absolute;
+			z-index: -1;
+			width:100%;
+		}
+		.content{
+			background: url('./img/mxbbg.png')no-repeat;
+			background-size: 100% 100%;
+		}
+		.title
+		{
+			font-size: 40px;margin: 40px 0 0 80px;
+			line-height: 80px;
+		}
+		.footContent{
+			margin-top: 30px;
+			background: url('./img/footbg.png')no-repeat;
+			background-size: 100% 100%;
+		}
+		.content>div{
+			width:90%;
+			margin-top: 3%;
+		}
+		.content div img:first-child{
+			width:25%;
+			vertical-align: middle;
+			margin-right: 20px;
+		}
+		.content div{
+			color: #fff;
+			font-weight: bold;
+		}
+		.friend1{
+			background-color: #ac8d69;
+			padding: 15px;
+			margin-top: 15px;
+		}
+		#shou{
+			height:100%;
+			width:100%;
+		}
+		.friend1>p{
+			display: inline-block;
+			float: right;
+		}
+		table
+		{
+			width:100%;
+			border: #6a452a solid 1px;
+		}
+		td
+		{
+			text-align: center;
+		}
+	</style>
+	<div class="wrap">
+		<img class="bgtp" src="./img/bg.png" alt="">
+		<div>
+			<div class="div1" style="margin-top: 30px">
+				<div><i></i><p class="zhihuan">我的明细</p></div>
+			</div>
+			<div class="div1" style="margin-top: 30px">
+				<table>
+					<tr><td><a style="color: whitesmoke">队票明细</a></td><td><a style="color: red">粮票明细</a></td><td><a style="color: whitesmoke">粮票明细</a></td></tr>
+				</table>
+			</div>
+			<div class="content">
+				<div>
+					<h class="title" >原有粮票：1000</h>
+				</div>
+				<div style="height: 50%">
+					<table>
+						<tr>
+							<td>
+								<h>时价</h>
+							</td>
+							<td>
+								<h>出</h>
+							</td>
+							<td>
+								<h>日期</h>
+							</td>
+							<td>
+								<h>粮票</h>
+							</td>
+							<td>
+								<h>情况</h>
+							</td>
+							<td>
+								<h>实际价</h>
+							</td>
+							<td>
+								<h>最终出</h>
+							</td>
+						</tr>
+						<tr>
+							<td>546</td><td>456</td><td>456</td><td>546</td><td>456</td><td>456</td><td>456</td>
+						</tr>
+						<tr>
+							<td>546</td><td>456</td><td>456</td><td>546</td><td>456</td><td>456</td><td>456</td>
+						</tr>
+						<tr>
+							<td>546</td><td>456</td><td>456</td><td>546</td><td>456</td><td>456</td><td>456</td>
+						</tr>
+						<tr>
+							<td>546</td><td>456</td><td>456</td><td>546</td><td>456</td><td>456</td><td>456</td>
+						</tr>
+						<tr>
+							<td>546</td><td>456</td><td>456</td><td>546</td><td>456</td><td>456</td><td>456</td>
+						</tr>
+						<tr>
+							<td>546</td><td>456</td><td>456</td><td>546</td><td>456</td><td>456</td><td>456</td>
+						</tr>
+
+						<tr>
+							<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+
+						<tr>
+							<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+						</tr>
+
+					</table>
+					<div>
+						<h class="title" >现有粮票：1000</h>
+					</div>
+				</div>
+			</div>
+			<div class="footContent">
+				<div style="background-image: url('./img/page.png');text-align: center;background-size: 100% 100%;">
+					<!--<img  src="./img/page.png" alt="" style="vertical-align: middle;width: 95%;margin: 20px;">-->
+					<h class="title" style="font-weight: bolder"> <&nbsp;1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;6&nbsp;7&nbsp;></h>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
