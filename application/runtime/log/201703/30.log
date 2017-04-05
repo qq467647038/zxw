@@ -1,0 +1,617 @@
+[ 2017-03-30T14:32:46+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php
+[ log ] zxw.org/admin.php [运行时间：0.120007s][吞吐率：8.33req/s] [内存消耗：1,125.83kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-30T14:32:46+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/captcha.html
+[ log ] zxw.org/admin.php/captcha.html [运行时间：0.442025s][吞吐率：2.26req/s] [内存消耗：899.69kb] [文件加载：30]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://zxw.org/admin.php',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\zxw\application\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-30T14:32:57+08:00 ] 127.0.0.1 127.0.0.1 POST /admin.php/index/login/check.html
+[ log ] zxw.org/admin.php/index/login/check.html [运行时间：0.233013s][吞吐率：4.29req/s] [内存消耗：1,759.09kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'usesession=pdh0pu7lp5kva9d42al3bd6eh5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zxw.org/admin.php',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zxw.org',
+  'accept' => '*/*',
+  'content-length' => '24',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+  'name' => '1',
+  'pwd' => '1',
+  'verify' => 'b5um',
+)
+[ info ] [ RUN ] app\index\controller\Login->check[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.051003s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_manager` [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zx_manager` WHERE  `name` = '1' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `password` FROM `zx_manager` WHERE  `name` = '1' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `create_time` FROM `zx_manager` WHERE  `name` = '1' LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-03-30T14:32:59+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/index/index.html
+[ log ] zxw.org/admin.php/index/index/index.html [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：1,736.84kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'usesession=pdh0pu7lp5kva9d42al3bd6eh5; usecookie=ece02b09068d2076616cd803745a90f2_1490855577',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://zxw.org/admin.php',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 1  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 2  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 3  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 4  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 5  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 6  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 7  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 8  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 43  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 44  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `nav_show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-03-30T14:32:59+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/index.html
+[ log ] zxw.org/admin.php/index/render/index.html [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,738.19kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'render',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'usesession=pdh0pu7lp5kva9d42al3bd6eh5; usecookie=ece02b09068d2076616cd803745a90f2_1490855579',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://zxw.org/admin.php/index/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Render->index[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 1  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 2  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 3  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 4  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 5  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 6  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 7  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 8  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 43  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 44  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `nav_show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-03-30T14:32:59+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/top.html
+[ log ] zxw.org/admin.php/index/render/top.html [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,738.20kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'render',
+    2 => 'top',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'usesession=pdh0pu7lp5kva9d42al3bd6eh5; usecookie=ece02b09068d2076616cd803745a90f2_1490855579',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://zxw.org/admin.php/index/render/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Render->top[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\top.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 1  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 2  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 3  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 4  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 5  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 6  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 7  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 8  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 43  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 44  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `nav_show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-03-30T14:33:00+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/left.html
+[ log ] zxw.org/admin.php/index/render/left.html [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：1,781.36kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'render',
+    2 => 'left',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'usesession=pdh0pu7lp5kva9d42al3bd6eh5; usecookie=ece02b09068d2076616cd803745a90f2_1490855579',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://zxw.org/admin.php/index/render/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Render->left[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Render.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\render\left.html [ array (
+  0 => 'aside',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 1  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 2  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 3  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 4  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 5  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 6  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 7  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 8  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 43  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 44  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `nav_show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-03-30T14:33:00+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/aside_img.png
+[ log ] zxw.org/admin.php/index/render/aside_img.png [运行时间：0.052002s][吞吐率：19.23req/s] [内存消耗：1,768.59kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'render',
+    2 => 'aside_img.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'usesession=pdh0pu7lp5kva9d42al3bd6eh5; usecookie=ece02b09068d2076616cd803745a90f2_1490855580',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://zxw.org/admin.php/index/render/left.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 1  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 2  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 3  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 4  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 5  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 6  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 7  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 8  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 43  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 44  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `nav_show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-03-30T14:33:04+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/group/design
+[ log ] zxw.org/admin.php/index/group/design [运行时间：0.146008s][吞吐率：6.85req/s] [内存消耗：1,799.02kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'group',
+    2 => 'design',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'usesession=pdh0pu7lp5kva9d42al3bd6eh5; usecookie=ece02b09068d2076616cd803745a90f2_1490855580',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://zxw.org/admin.php/index/render/left.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Group->design[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Group.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\group\design.html [ array (
+  0 => 'aside',
+  1 => 'data',
+  2 => 'rows',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008001s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 1  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 2  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 3  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 4  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 5  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 6  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 7  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 8  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 43  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 44  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `nav_show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_elite` [ RunTime:0.041002s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_elite` WHERE  `type` = '23'  AND `typename` = '设计团队' ORDER BY create_time desc LIMIT 5 [ RunTime:0.011000s ]
+
+---------------------------------------------------------------
+[ 2017-03-30T14:33:06+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/group/construct
+[ log ] zxw.org/admin.php/index/group/construct [运行时间：0.168010s][吞吐率：5.95req/s] [内存消耗：1,799.08kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'group',
+    2 => 'construct',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'usesession=pdh0pu7lp5kva9d42al3bd6eh5; usecookie=ece02b09068d2076616cd803745a90f2_1490855584',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://zxw.org/admin.php/index/render/left.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Group->construct[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Group.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\group\construct.html [ array (
+  0 => 'aside',
+  1 => 'data',
+  2 => 'rows',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `show` = 1 ORDER BY sort asc [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 1  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 2  AND `show` = 1 ORDER BY sort asc [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 3  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 4  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 5  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 6  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 7  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 8  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 43  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 44  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `nav_show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_elite` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_elite` WHERE  `type` = '24'  AND `typename` = '施工团队' ORDER BY create_time desc LIMIT 5 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-03-30T14:33:08+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/1
+[ log ] zxw.org/admin.php/index/render/1 [运行时间：0.091005s][吞吐率：10.99req/s] [内存消耗：1,768.88kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'render',
+    2 => '1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'usesession=pdh0pu7lp5kva9d42al3bd6eh5; usecookie=ece02b09068d2076616cd803745a90f2_1490855586',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://zxw.org/admin.php/index/render/left.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 1  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 2  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 3  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 4  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 5  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 6  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 7  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 8  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 43  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 44  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `nav_show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-03-30T14:33:10+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/company/honour
+[ log ] zxw.org/admin.php/index/company/honour [运行时间：0.106006s][吞吐率：9.43req/s] [内存消耗：1,811.16kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'company',
+    2 => 'honour',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'usesession=pdh0pu7lp5kva9d42al3bd6eh5; usecookie=ece02b09068d2076616cd803745a90f2_1490855588',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://zxw.org/admin.php/index/render/left.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Company->honour[ D:\phpStudy\WWW\zxw\application\admin\index\controller\Company.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\zxw/application/admin/index\view\company\honour.html [ array (
+  0 => 'aside',
+  1 => 'data',
+  2 => 'row',
+  3 => 'photo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 1  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 2  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 3  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 4  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 5  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 6  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 7  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 8  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 43  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 44  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `nav_show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_company` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `photo` FROM `zx_company` WHERE  `id` = 2 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_company` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001001s ]
+
+---------------------------------------------------------------
+[ 2017-03-30T14:34:13+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/render/1
+[ log ] zxw.org/admin.php/index/render/1 [运行时间：0.076005s][吞吐率：13.16req/s] [内存消耗：1,768.88kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\zxw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'render',
+    2 => '1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'usesession=pdh0pu7lp5kva9d42al3bd6eh5; usecookie=ece02b09068d2076616cd803745a90f2_1490855590',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://zxw.org/admin.php/index/render/left.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'zxw.org',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'name' => 'usesession',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=zxw;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zx_aside` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 1  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 2  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 3  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 4  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 5  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 6  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 7  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 8  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 43  AND `show` = 1 ORDER BY sort asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 44  AND `show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `zx_aside` WHERE  `pid` = 0  AND `nav_show` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
